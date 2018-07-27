@@ -1,0 +1,6 @@
+application:
+  index:
+    info: boot-demo
+
+server:
+  port: 8080
