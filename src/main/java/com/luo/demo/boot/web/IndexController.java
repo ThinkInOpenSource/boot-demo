@@ -1,8 +1,12 @@
 package com.luo.demo.boot.web;
 
+import com.luo.demo.boot.model.ParamModel;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
 
 /**
  * @author xiangnan
@@ -15,8 +19,14 @@ public class IndexController {
     private String info;
 
     @GetMapping("/")
-    public String index() {
+    public Object index() {
         return info;
+    }
+
+    @GetMapping("/param")
+    public Object testParam(@Valid ParamModel paramModel, BindingResult bindingResult) {
+        System.out.println(paramModel);
+        return paramModel;
     }
 
 }
