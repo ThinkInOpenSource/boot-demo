@@ -4,3 +4,13 @@ application:
 
 server:
   port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.85.129:3306/test
+    username: luoxn28
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.luo.demo.boot.entity
