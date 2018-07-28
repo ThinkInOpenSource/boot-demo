@@ -13,4 +13,4 @@ spring:
     password: 123456
 
 mybatis:
-  type-aliases-package: com.luo.demo.boot.entity
+  mapper-locations: classpath*:mapper/*Mapper.xml

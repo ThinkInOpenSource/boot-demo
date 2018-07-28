@@ -2,7 +2,6 @@ package com.luo.demo.boot.dao;
 
 import com.luo.demo.boot.entity.UserEntity;
 import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
 
 /**
  * @author xiangnan
@@ -10,7 +9,6 @@ import org.apache.ibatis.annotations.Select;
  */
 public interface UserDao {
 
-    @Select("select * from person where id = #{id}")
     UserEntity selectById(@Param("id") int id);
 
 }
