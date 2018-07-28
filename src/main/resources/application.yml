@@ -11,6 +11,7 @@ spring:
     url: jdbc:mysql://192.168.85.129:3306/test
     username: luoxn28
     password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
