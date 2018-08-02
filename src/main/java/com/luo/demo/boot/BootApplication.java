@@ -3,6 +3,7 @@ package com.luo.demo.boot;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
  * @author xiangnan
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.luo.demo.boot.dao")
+@ServletComponentScan
 public class BootApplication {
 
     public static void main(String[] args) {
